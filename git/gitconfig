@@ -1,0 +1,16 @@
+[user]
+	email = dario@ntun.es
+	name = Dário Tavares Antunes
+	signingkey = 26B38D51979A4E452AC50CF60FBE4883EB34A6E7
+[rebase]
+	autosquash = true
+[fetch]
+	prune = true
+[alias]
+	log = log --show-signature
+	graph = log --all --graph --decorate --oneline --simplify-by-decoration
+	long-graph = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[push]
+	default = upstream
+[commit]
+	gpgsign = true
