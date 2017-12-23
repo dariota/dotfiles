@@ -1,0 +1,17 @@
+#!/bin/sh
+SINK=$(pactl list sinks | head -n 1 | sed 's/Sink #//')
+
+case $1 in
+	"increase")
+		pactl set-sink-volume $SINK +5%
+		;;
+	"decrease")
+		pactl -- set-sink-volume $SINK -5%
+		;;
+	"toggle")
+		pactl set-sink-mute $SINK toggle
+		;;
+	*)
+		echo "ok"
+		;;
+esac
