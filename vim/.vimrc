@@ -56,7 +56,7 @@ autocmd BufRead,BufNewFile *.c set cinoptions=:0
 
 " Spaces instead of tabs in haskell things
 autocmd BufRead,BufNewFile *.hs set expandtab
-autocmd BufRead,BufNewFile *.lhs set expandtab
+autocmd BufRead,BufNewFile *.lhs set expandtab linebreak filetype=haskell
 autocmd BufRead,BufNewFile *.cabal set expandtab
 
 " wrap on words
