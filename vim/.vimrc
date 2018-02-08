@@ -62,6 +62,11 @@ autocmd BufRead,BufNewFile *.cabal set expandtab
 " wrap on words
 autocmd BufRead,BufNewFile *.md set linebreak
 
+" ocaml boys
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
+let g:syntastic_ocmal_checkers = ['merlin']
+
 " package config here
 let g:rainbow_conf = {
     \   'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
