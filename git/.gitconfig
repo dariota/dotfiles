@@ -2,6 +2,8 @@
 	email = dario@ntun.es
 	name = Dário Tavares Antunes
 	signingkey = 26B38D51979A4E452AC50CF60FBE4883EB34A6E7
+[difftool "diffpdf"]
+	cmd = diff-pdf \"$LOCAL\" \"$REMOTE\"
 [rebase]
 	autosquash = true
 [fetch]
