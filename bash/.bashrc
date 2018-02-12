@@ -127,3 +127,4 @@ fi
 
 # Add opam binaries to PATH
 export PATH=$PATH:/home/d/.opam/system/bin
+eval $(opam config env)
