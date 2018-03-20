@@ -20,6 +20,12 @@ Plugin 'neovimhaskell/haskell-vim'
 " parentheses highlighting
 Plugin 'luochen1990/rainbow'
 
+" better indentation for ocaml
+Plugin 'ocamlpro/ocp-indent'
+
+" better syntax highlighting for ocaml
+Plugin 'rgrinberg/vim-ocaml'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -63,9 +69,7 @@ autocmd BufRead,BufNewFile *.cabal set expandtab
 autocmd BufRead,BufNewFile *.md set linebreak
 
 " ocaml boys
-let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
-execute "set rtp+=" . g:opamshare . "/merlin/vim"
-let g:syntastic_ocmal_checkers = ['merlin']
+autocmd BufRead,BufNewFile *.ml,*.mli compiler ocaml
 
 " package config here
 let g:rainbow_conf = {
