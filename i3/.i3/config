@@ -31,7 +31,7 @@ bindsym $mod+v exec pavucontrol
 bindsym $mod+r exec java -jar ~/Downloads/OSBuddy.jar
 bindsym $mod+j exec eclipse
 bindsym $mod+w exec urxvt -e vim
-bindsym $mod+m exec xrandr --output DP1 --left-of eDP1 --auto
+bindsym $mod+m exec xrandr --output DP1 --right-of eDP1 --auto
 
 # Hibernate/Lock commands
 bindsym $mod+h exec sudo pm-suspend & i3lock -e -f --color=444444
