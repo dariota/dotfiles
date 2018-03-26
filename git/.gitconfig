@@ -12,6 +12,7 @@
 	log = log --show-signature
 	graph = log --all --graph --decorate --oneline --simplify-by-decoration
 	long-graph = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	psuh = push
 [push]
 	default = upstream
 [commit]
