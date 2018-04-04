@@ -18,3 +18,8 @@ alias clip='xclip -selection c'
 alias commits='git log --oneline --decorate --color=always | head'
 
 alias lol='echo "HAHAHA AREN'"'"'T YOU FUCKING HILARIOUS"'
+
+function silence() {
+	$@ > /dev/null 2> /dev/null &
+	disown
+}
