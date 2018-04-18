@@ -71,6 +71,9 @@ autocmd BufRead,BufNewFile *.md set linebreak
 " ocaml boys
 autocmd BufRead,BufNewFile *.ml,*.mli compiler ocaml
 
+" skip syntastic checking for Java because it's slow as balls
+let g:loaded_systastic_java_javac_checker = 1
+
 " package config here
 let g:rainbow_conf = {
     \   'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
