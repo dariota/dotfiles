@@ -124,7 +124,3 @@ fi
 if [[ "$SSH_AGENT_PID" == "" ]]; then
     eval "$(<~/.ssh-agent-thing)" > /dev/null
 fi
-
-# Add opam binaries to PATH
-export PATH=$PATH:/home/d/.opam/system/bin
-eval $(opam config env)

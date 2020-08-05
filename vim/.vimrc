@@ -20,12 +20,6 @@ Plugin 'neovimhaskell/haskell-vim'
 " parentheses highlighting
 Plugin 'luochen1990/rainbow'
 
-" better indentation for ocaml
-Plugin 'ocamlpro/ocp-indent'
-
-" better syntax highlighting for ocaml
-Plugin 'rgrinberg/vim-ocaml'
-
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -67,9 +61,6 @@ autocmd BufRead,BufNewFile *.cabal set expandtab
 
 " wrap on words
 autocmd BufRead,BufNewFile *.md set linebreak
-
-" ocaml boys
-autocmd BufRead,BufNewFile *.ml,*.mli compiler ocaml
 
 " skip syntastic checking for Java because it's slow as balls
 let g:loaded_systastic_java_javac_checker = 1
