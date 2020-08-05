@@ -20,7 +20,7 @@ urxvt*scrollBar: false
 *color14: #34E2E2
 *color15: #EEEEEC
 
-urxvt*font: xft:Inconsolata:size=13,xft:NotoEmoji:pixelsize=10,xft:Code2000
+urxvt*font: xft:AnonymousPro:size=13,xft:NotoEmoji:pixelsize=10,xft:Code2000
 
 Xft.antialias:  true
 Xft.rgba:       rgb
