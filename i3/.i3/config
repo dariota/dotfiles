@@ -44,11 +44,11 @@ bindsym XF86AudioLowerVolume exec --no-startup-id adjustSound decrease
 bindsym XF86AudioMute exec --no-startup-id adjustSound toggle
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 2 -time 1 -steps 1 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 2 -time 1 -steps 1 # decrease screen brightness
-bindsym Shift+XF86MonBrightnessUp exec xbacklight -inc 10 -time 1 -steps 1 # increase screen brightness
-bindsym Shift+XF86MonBrightnessDown exec xbacklight -dec 10 -time 1 -steps 1 # decrease screen brightness
-bindsym XF86Launch3 exec xbacklight -set 100
+bindsym XF86MonBrightnessUp exec light -A 2 # increase screen brightness by 2%
+bindsym XF86MonBrightnessDown exec light -U 2 # decrease screen brightness by 2%
+bindsym Shift+XF86MonBrightnessUp exec light -A 10 # increase screen brightness by 10%
+bindsym Shift+XF86MonBrightnessDown exec light -A 10 # decrease screen brightness by 10%
+bindsym XF86Launch3 exec light -S 100 # maximise brightness
 
 # Media player controls
 bindsym XF86AudioPlay exec mpc toggle && pkill -SIGUSR1 i3status
