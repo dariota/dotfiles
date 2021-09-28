@@ -13,7 +13,15 @@
 	graph = log --all --graph --decorate --oneline --simplify-by-decoration
 	long-graph = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	psuh = push
+	s = status -s
+	oops = commit --amend --no-edit
 [push]
-	default = upstream
+	default = current
 [commit]
 	gpgsign = true
+[core]
+	excludesfile = ~/.gitignore
+[protocol]
+	version = 2
+[pull]
+	ff = only
