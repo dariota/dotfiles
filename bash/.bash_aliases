@@ -10,8 +10,7 @@ alias get='enable_alert && sudo pacman -S'
 alias uu='enable_alert && sudo pacman -Syu'
 alias uuu='enable_alert && sudo pacman -Syyu'
 
-alias spoon='while ! ssh spoon -t tmux a -d; do sleep 0.5; done'
-alias cube='while ! ssh cube -t tmux a -d; do sleep 0.5; done'
+alias oldsoc='while ! ssh oldsoc.net -t tmux a -d; do sleep 0.5; done'
 
 alias clip='xclip -selection c'
 

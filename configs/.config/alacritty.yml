@@ -1,0 +1,42 @@
+scrolling:
+  history: 5000
+
+font:
+  normal:
+    family: AnonymousPro
+
+  size: 8.0
+
+draw_bold_text_with_bright_colours: true
+
+schemes:
+  Mine: &Mine
+    primary:
+      background: '#000000'
+      foreground: '#ffffff'
+    cursor:
+      text: CellBackground
+      cursor: CellForeground
+    selection:
+      text: CellForeground
+      background: '#cccccc'
+    normal:
+      black: '#2e3436'
+      red: '#a40000'
+      green: '#4e9A06'
+      yellow: '#c4a000'
+      blue: '#3465a4'
+      magenta: '#75507b'
+      cyan: '#069773'
+      white: '#babdb9'
+    bright:
+      black: '#555753'
+      red: '#ef2929'
+      green: '#8ae234'
+      yellow: '#fce94f'
+      blue: '#729fcf'
+      magenta: '#ad7fa8'
+      cyan: '#34e2e2'
+      white: '#eeeeec'
+
+colors: *Mine

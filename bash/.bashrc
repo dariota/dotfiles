@@ -126,3 +126,5 @@ if [[ "$SSH_AGENT_PID" == "" ]]; then
 fi
 
 export GPG_TTY=$(tty)
+
+export PATH=$PATH:/home/d/.gem/ruby/2.7.0/bin

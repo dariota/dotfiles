@@ -16,7 +16,7 @@ set $TERMINAL urxvt
 hide_edge_borders vertical 
 
 # Startup programs
-exec --no-startup-id i3-msg 'workspace2; exec firefox; workspace 3; exec thunderbird; workspace 1; exec urxvt'
+exec --no-startup-id i3-msg 'workspace2; exec firefox; workspace 3; exec thunderbird; workspace 1; exec alacritty'
 exec --no-startup-id feh --bg-scale ~/Pictures/loughBray.jpg
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift -c ~/.config/redshift.config
@@ -28,7 +28,7 @@ bindsym $mod+f exec firefox
 bindsym $mod+b exec thunderbird
 bindsym $mod+g exec gimp
 bindsym $mod+v exec pavucontrol
-bindsym $mod+r exec java -jar ~/Downloads/OSBuddy.jar
+bindsym $mod+r exec java -jar ~/Downloads/RuneLite.jar
 bindsym $mod+j exec eclipse
 bindsym $mod+w exec urxvt -e vim
 bindsym $mod+m exec xrandr --output DP1 --right-of eDP1 --auto
@@ -47,7 +47,7 @@ bindsym XF86AudioMute exec --no-startup-id adjustSound toggle
 bindsym XF86MonBrightnessUp exec light -A 2 # increase screen brightness by 2%
 bindsym XF86MonBrightnessDown exec light -U 2 # decrease screen brightness by 2%
 bindsym Shift+XF86MonBrightnessUp exec light -A 10 # increase screen brightness by 10%
-bindsym Shift+XF86MonBrightnessDown exec light -A 10 # decrease screen brightness by 10%
+bindsym Shift+XF86MonBrightnessDown exec light -U 10 # decrease screen brightness by 10%
 bindsym XF86Launch3 exec light -S 100 # maximise brightness
 
 # Media player controls
@@ -82,7 +82,7 @@ font pango:DejaVu Sans Mono 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt 
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+apostrophe kill
